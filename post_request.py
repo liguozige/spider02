@@ -6,12 +6,12 @@ def fanyi_baidu():
     url = 'http://fanyi.baidu.com/basetrans'
     #注意headers必须是手机的浏览器
     headers = {
-        "User-Agent": 'Mozilla/5.0 (Linux; Android 5.0; SM-G900P Build/LRX21T) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Mobile Safari/537.36'}
+        "User-Agent": 'Mozilla/5.0 (Linux; Android 5.0; SM-G900P Build/LRX21T) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Mobile Safari/537.36'}
     #2.拼接参数
     data = {
-        "query":" 人民币",
-        "from":" zh",
-        "to":" en",
+        "query":"葡萄",
+        "from":"zh",
+        "to":"en",
     }
     #3.发送post请求 参数data
     response = requests.post(url,data=data,headers=headers)
