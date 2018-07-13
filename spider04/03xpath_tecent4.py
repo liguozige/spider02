@@ -70,7 +70,6 @@ class TencentSpider(object):
             #3.解析数据
             judge_over = self.analysis_data(data)
 
-
             #4.如果满足条件class有值，说明已经是最后一页 跳出循环
             if judge_over:
                 break
