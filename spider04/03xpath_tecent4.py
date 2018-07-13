@@ -62,7 +62,6 @@ class TencentSpider(object):
                 "tid": "0",
                 "start": self.page
             }
-
             # 2.发送请求
             data = self.send_request(params)
             self.page += 10
